@@ -2,9 +2,9 @@ import React from 'react';
 
 const NoMatch = () => {
   return (
-    <section>
+    <div className='not-found'>
       <strong>Page not found!</strong>
-    </section>
+    </div>
   );
 };
 

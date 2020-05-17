@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 // import { GlobalStyles } from '../global';
 // import { theme } from '../theme';
 import Home from './Home';
+import Banner from './Banner';
 import Coupon from './Coupon';
 import Contact from './Contact';
 import NoMatch from './NoMatch';
@@ -15,12 +16,15 @@ function App() {
     <Router>
       <Navbar />
       <main>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/contact' component={Contact} />
-          <Route path='/coupon' component={Coupon} />
-          <Route component={NoMatch} />
-        </Switch>
+        <section>
+          <Banner />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/coupon' component={Coupon} />
+            <Route path='*' component={NoMatch} />
+          </Switch>
+        </section>
       </main>
     </Router >
   )

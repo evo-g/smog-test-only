@@ -3,8 +3,7 @@ import Banner from './Banner';
 
 const Coupon = () => {
   return (
-    <section>
-      <Banner />
+    <React.Fragment>
       <div className='coupon'>
         <h1><strong>Smog Test Special</strong></h1>
         <h3>$31.75 + $ 8.25 for the certificate</h3>
@@ -15,7 +14,7 @@ const Coupon = () => {
         <p>Just use the following coupon code for a paperless coupon:</p>
         <p>Code: “TV”</p>
       </div>
-    </section>
+    </React.Fragment>
   )
 };
 

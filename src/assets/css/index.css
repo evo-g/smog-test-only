@@ -110,6 +110,7 @@ li a {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: .7rem;
 }
 
 /* Main section */
@@ -118,7 +119,7 @@ li a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 80vw;
+  width: 75vw;
 }
 
 .card {
@@ -126,12 +127,17 @@ li a {
   flex-direction: column;
   height: 10rem;
   width: 12rem;
-  border: 1px solid blue;
   margin: 20px 10px;
 }
 
 .card h1 {
   font-size: 14px;
+  margin: .5rem .2rem .3rem .2rem;
+}
+
+.card p {
+  margin: .3rem;
+  font-size: 13px;
 }
 
 /* coupon-section */
@@ -183,9 +189,12 @@ li a {
   display: none;
 }
 
-/* main h1 {
-  color: #FAFAFA;
-} */
+/* Not Found */
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Individual item */
 .bm-item {
@@ -258,20 +267,31 @@ li a {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: .7rem;
   }
   .carousel-root {
     width: 68vw;
   }
   .coupon {
-    height: 50vh;
+    height: 55vh;
   }
 }
 
 @media (max-width: 640px) {
+  section {
+    width: 85vw;
+  }
+  .banner-container {
+    width: 80vw;
+  }
+  .banner-container img {
+    width: 79vw;
+    border-radius: 0;
+  }
   .second-child {
-    width: 95%;
     display: flex;
     justify-content: center;
+    margin-bottom: .5rem;
   }
   .carousel-root {
     width: 70vw;
@@ -279,9 +299,16 @@ li a {
   .row {
     flex-direction: column;
     align-items: center;
+    margin-top: .7rem;
+  }
+  .card {
+    width: 100%;
+    margin: 8px 10px;
+    border: none;
   }
   .coupon {
-    height: 65vh;
-    width: 60vw;
+    height: 60vh;
+    width: 75vw;
   }
+
 }
